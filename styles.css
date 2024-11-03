@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+header {
+    background-color: #2d3f4f;
+    color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffcc00;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: relative;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 5px;
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: .5rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 30px;
+
+
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.team-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #777;
+}
+
+.project-section {
+    padding: 60px 0;
+}
+
+.project-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #555;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+.contact-section .btn {
+    width: 100%;
+    text-align: center;
+}
+
+ footer {
+    background-color: #00264d;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2d3f4f;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        border-top: 1px solid #fff;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.background-image {
+    position: relative;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #004080;
+    min-height: 100vh;
+    padding: 15rem .5rem;
+    color: #fff;
+    text-align: center;
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+
+.background-image > * {
+    position: relative;
+    z-index: 2;
+}
+
+.background-image h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.background-image p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+ 
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
