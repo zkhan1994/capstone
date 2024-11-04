@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Project Overview - Angels Among Us Volunteer Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -31,7 +31,22 @@
         <div class="container">
             <h1>Project Overview</h1>
             <p>
-                Our project focuses on developing a comprehensive web application to streamline volunteer management for Angels Among Us. The platform includes features such as volunteer registration, scheduling, communication tools, and reporting functionalities, all designed to enhance the shelter's operations and community outreach.
+                Halo is a comprehensive volunteer management application (VMA) developed to address specific needs
+                identified by Angels Among Us Pet Rescue (AAU). AAU's current system is unable to effectively manage and
+                store complex volunteer information, limiting its effectiveness. As the organization’s needs evolved,
+                AAU required a more robust and secure solution to handle volunteer information efficiently. Our team
+                designed Halo using the React.js library for the frontend, the Python based FastAPI framework for the
+                backend, and a PostgreSQL database schema, with Docker containerization to ensure consistent deployment
+                across environments. This setup enables efficient management of volunteer and team data, along with
+                support for exporting reports in both .csv and .xlsx formats. To address security, Halo incorporates
+                role-based access control (RBAC), differentiating access for administrators, editors, and viewers. We
+                also implemented a Google Sign-On feature with JSON web tokens (JWT) to validate users' Google login
+                information within the database. Additionally, an Extract, Transfer, and Load (ETL) script facilitates
+                secure data requests directly on the server. Halo’s frontend offers an intuitive interface designed to
+                enhance user experience, with extensive search and filtering capabilities that make it easy to access
+                and manage volunteer data. These improvements result in faster query responses and a substantial boost
+                in usability compared to AAU's previous system.
+                
             </p>
         </div>
     </section>
@@ -44,4 +59,5 @@
     <script src="scripts.js"></script>
 
 </body>
+
 </html>

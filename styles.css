@@ -100,7 +100,7 @@ nav {
 }
 
 .team-section {
-    padding: 60px 0;
+    padding: 10rem;
     background-color: #fff;
 }
 
@@ -232,7 +232,6 @@ footer p {
     color: #fff;
     padding: 3rem 0;
     text-align: center;
-    position:fixed;
     left:0px;
     bottom:0px;
     height:30px;
@@ -282,7 +281,7 @@ footer p {
     text-align: center;
     animation: fadeInBackground 1.5s ease-in-out;
 }
-
+ 
 
 .background-image > * {
     position: relative;
@@ -299,7 +298,7 @@ footer p {
     max-width: 800px;
     margin: auto;
     line-height: 1.6;
-    color:rgba(50, 45, 45, 0.947)
+    color:rgb(255, 255, 255)
  
 }
 
@@ -335,11 +334,16 @@ footer p {
 }
 
 .close-button {
+    position: absolute;
+    top: 2rem;    
+    right: 4rem;  
     color: #aaa;
-    float: right;
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .close-button:hover,
