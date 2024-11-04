@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const modalId = link.getAttribute('data-modal');
             const modal = document.getElementById(modalId);
             modal.style.display = 'block';
+            // Added code to trigger animation
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 10);
         });
     });
 
@@ -22,13 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const modalId = button.getAttribute('data-modal');
             const modal = document.getElementById(modalId);
-            modal.style.display = 'none';
+            // Added code to start closing animation
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
         });
     });
 
     window.addEventListener('click', (event) => {
         if (event.target.classList.contains('modal')) {
-            event.target.style.display = 'none';
+            const modal = event.target;
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
         }
     });
 });
