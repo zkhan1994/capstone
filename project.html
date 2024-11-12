@@ -13,13 +13,14 @@
         <div class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="Angels Among Us Logo">
+                <img src="images/sep.png" alt="Angels Among Us Logo">
+                <img src="https://angelsrescue.org/wp-content/uploads/2020/05/A-Mark.svg" style="padding-right: 1rem;">
             </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="project.html" class="active">Project</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="menu-toggle" id="menu-toggle">
                     <div class="hamburger"></div>
@@ -29,7 +30,7 @@
     </header>
     <section class="project-section">
         <div class="container">
-            <h1>Project Overview</h1>
+            <h1>Abstract</h1>
             <p>
                 Halo is a comprehensive volunteer management application (VMA) developed to address specific needs
                 identified by Angels Among Us Pet Rescue (AAU). AAU's current system is unable to effectively manage and
@@ -46,7 +47,45 @@
                 enhance user experience, with extensive search and filtering capabilities that make it easy to access
                 and manage volunteer data. These improvements result in faster query responses and a substantial boost
                 in usability compared to AAU's previous system.
-                
+
+            </p>
+            <h1>Requirements</h1>
+            <p>AAU required a new application focused on security and usability, enabling users to enhance volunteer and
+                team data. Essential features included importing volunteer and team records from the existing iShelters
+                database and designing a PostgreSQL database schema. The application also needed a frontend UI for
+                authorized users to add detailed information to records. It also required thorough reporting during the
+                data migration process. Deployment using Docker containers was necessary for scalability and management.
+            </p>
+            <h1>Design</h1>
+            <p>
+                The Volunteer Management Application (VMA) website features a clean, user-friendly interface optimized
+                for quick searches and advanced filtering of volunteer and team lists. Users can easily view, update,
+                and enrich data for individual volunteers and teams, with the option to export lists based on any
+                applied query or filter criteria. The design emphasizes accessibility and efficiency, enabling users to
+                manage records seamlessly.
+
+            </p>
+            <br>
+            <h1>Extract, Transfer, & Load (ETL)</h1>
+            <p>The VMA uses an ETL script to handle the extraction of 35 attributes from 7 tables in the iShelters
+                database. It also manages their subsequent transformation and loading into HaloDB. This operation
+                ensures the security of information in transit when attempting to send and receive requests by running
+                locally on the website’s server without the need for external access.
+            </p>
+            <h1>Google Sign-On and Integration</h1>
+            <p>Halo implements a Sign-On integration with Google, allowing volunteers to use one set of credentials for
+                all their Google integrated applications. As part of this system, Halo uses an encrypted JSON Web Token
+                (JWT) system that processes Google login information by validating it against the database and issuing
+                tokens for all subsequent endpoint requests within the application. Each token contains user-specific
+                information encrypted within the token string, allowing secure and efficient user identification across
+                requests.
+            </p>
+            <h1 class="results">Results</h1>
+            <p>Our team developed a secure, containerized application that enables AAU to efficiently manage and enrich
+                volunteer and team data. The implemented features allow users to import records, apply detailed search
+                and filtering, and export customized lists, meeting AAU's requirements for usability and data accuracy.
+                Additionally, the new system supports smooth data migration and syncing from existing sources and
+                provides a solid foundation for ongoing volunteer management tasks.
             </p>
         </div>
     </section>
@@ -55,7 +94,6 @@
             <p>&copy; 2024 Kennesaw State University Capstone Team. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
     <script src="scripts.js"></script>
 
 </body>
