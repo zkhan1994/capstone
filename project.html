@@ -6,6 +6,7 @@
     <title>Project Overview - Angels Among Us Volunteer Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" />
 </head>
 
 <body>
@@ -49,6 +50,7 @@
                 in usability compared to AAU's previous system.
 
             </p>
+            <br>
             <h1>Requirements</h1>
             <p>AAU required a new application focused on security and usability, enabling users to enhance volunteer and
                 team data. Essential features included importing volunteer and team records from the existing iShelters
@@ -56,6 +58,8 @@
                 authorized users to add detailed information to records. It also required thorough reporting during the
                 data migration process. Deployment using Docker containers was necessary for scalability and management.
             </p>
+            <img class= "center" src="images/3tier.png" alt="Requirements Diagram" style="width:600px;height:auto;" />
+           <br>
             <h1>Design</h1>
             <p>
                 The Volunteer Management Application (VMA) website features a clean, user-friendly interface optimized
@@ -63,15 +67,16 @@
                 and enrich data for individual volunteers and teams, with the option to export lists based on any
                 applied query or filter criteria. The design emphasizes accessibility and efficiency, enabling users to
                 manage records seamlessly.
-
             </p>
+            <img class= "center" src="images/chart.png" alt="Design Diagram" style="width:500px;height:auto;">
             <br>
             <h1>Extract, Transfer, & Load (ETL)</h1>
             <p>The VMA uses an ETL script to handle the extraction of 35 attributes from 7 tables in the iShelters
                 database. It also manages their subsequent transformation and loading into HaloDB. This operation
                 ensures the security of information in transit when attempting to send and receive requests by running
-                locally on the website’s server without the need for external access.
-            </p>
+                locally on the website’s server without the need for external access.</p>
+                <img class= "center" src="images/etl.png" alt="ETL Diagram">
+            <br>
             <h1>Google Sign-On and Integration</h1>
             <p>Halo implements a Sign-On integration with Google, allowing volunteers to use one set of credentials for
                 all their Google integrated applications. As part of this system, Halo uses an encrypted JSON Web Token

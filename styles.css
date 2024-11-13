@@ -31,7 +31,7 @@ header .container {
     width: 150px;
 }
 
-nav {
+.nav {
     position: relative;
 }
 
@@ -376,10 +376,16 @@ h1.results {
 
 .team-member-name {
     color: #004080;
-    text-decoration: overline;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 .team-member-name:hover {
-    text-decoration: underline;
+    text-decoration: overline;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+  }
