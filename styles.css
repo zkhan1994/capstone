@@ -9,6 +9,9 @@ body {
     color: #333;
 }
 
+p{
+text-indent: 5%;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -18,6 +21,8 @@ body {
 header {
     background-color: #2d3f4f;
     color: #ffffff;
+    padding: 10px 0; /* Reduced padding for more space */
+    position: relative;
 }
 
 header .container {
@@ -26,9 +31,16 @@ header .container {
     justify-content: space-between;
     padding: 20px 0;
 }
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    }
 
+  
 .logo img {
-    width: 150px;
+    width: 120px; /* Reduced width for smaller screens */
 }
 
 .nav {
@@ -36,20 +48,25 @@ header .container {
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    background-color: #2d3f4f; /* O
+    flex-d: wrap; /* Allows links to wrap if needed */
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin: 0;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
 .nav-links a:hover,
@@ -57,29 +74,34 @@ header .container {
     color: #ffcc00;
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+@media (max-width: 500px) {
+    header .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px; 
+        margin-bottom: 10px;
+        
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 10px; 
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .nav-links a {
+        font-size: 1rem; 
+        padding: 8px;
+        flex-direction: row-reverse; /* Stack elements vertically */
+        align-items: center; /* Reduced padding for better fit */
+    }
 }
 
-
-.hero {
-    background: url('images/hero-bg.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
 
 .btn {
     background-color: #ffcc00;
@@ -138,6 +160,17 @@ header .container {
     color: #777;
 }
 
+.team-footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d3f4f;
+    color: white;
+    text-align: center;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -174,6 +207,7 @@ footer p {
 .project-section h1 {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .project-section p {
@@ -240,9 +274,8 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .nav-links {
-        display: none;
         flex-direction: column;
         background-color: #2d3f4f;
         position: absolute;
@@ -383,9 +416,10 @@ h1.results {
 .team-member-name:hover {
     text-decoration: overline;
 }
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:40%;
-  }
+    width: 40%;
+}
