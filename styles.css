@@ -206,7 +206,10 @@ footer p {
 
 .project-section h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    border-top: 5px solid #ddd;
+    padding-bottom: 5%;
+    padding-top: 5%;
     
 }
 
@@ -218,50 +221,6 @@ footer p {
     color: #555;
 }
 
-.contact-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.contact-section h1 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.contact-section form {
-    max-width: 600px;
-    margin: auto;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #004080;
-    outline: none;
-}
-
-.contact-section .btn {
-    width: 100%;
-    text-align: center;
-}
 
 footer {
     background-color: #00264d;
@@ -274,7 +233,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .nav-links {
         flex-direction: column;
         background-color: #2d3f4f;
