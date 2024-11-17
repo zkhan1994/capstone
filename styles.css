@@ -44,7 +44,6 @@ header .container {
 
 .logo img {
     width: 120px;
-    /* Reduced width for smaller screens */
 }
 
 .nav {
@@ -57,8 +56,7 @@ header .container {
     justify-content: center;
     align-items: center;
     background-color: #2d3f4f;
-    /* O
-    flex-d: wrap; /* Allows links to wrap if needed */
+   
 }
 
 .nav-links li {
@@ -119,8 +117,8 @@ img.center {
         width: 20rem;
         height: auto;
         position: relative;
-        top:1rem;
-        right:2rem
+        top:2rem;
+        right:3.5rem
     }
 }
 
@@ -297,6 +295,9 @@ footer {
         margin-right: auto;
         width: 10rem;
         height: auto;
+        position: relative;
+        top:1rem;
+        right:2rem
     }
 
 }
