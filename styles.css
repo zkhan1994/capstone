@@ -118,7 +118,7 @@ img.center {
         height: auto;
         position: relative;
         top:2rem;
-        right:3.5rem
+        right:2.5rem
     }
 }
 
@@ -220,7 +220,7 @@ footer p {
 }
 
 .project-section {
-    padding: 6rem;
+    padding: 3rem;
 
 }
 
