@@ -44,3 +44,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// Existing code...
+
+// Gallery Modal Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    const closeButtons = document.querySelectorAll('.close-button');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            const modalId = img.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+        });
+    });
+
+    // Close modal when clicking outside of modal content
+    window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    });
+});
