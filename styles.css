@@ -485,9 +485,7 @@ h1.results {
     transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
+
 
 /* Responsive Styles */
 @media (max-width: 992px) {
