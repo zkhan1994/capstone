@@ -108,10 +108,9 @@ img.center {
     }
     
     .nav-links a {
-        font-size: 1rem;
-        padding: 8px;
-        flex-direction: row-reverse;
-        align-items: center;
+        font-size: .8rem;
+    text-decoration: none;
+    color: #fff; /* Or your desired link color */
     }
     img.center {
         display: block;
@@ -124,7 +123,45 @@ img.center {
         right:2.5rem
     }
 }
+@media (max-width: 1200px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .logo img {
+        width: 100px;
+        margin-bottom: 10px;
+
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        display: flex; 
+
+    }
+    .nav-links li {
+        margin:20%;
+    }
+    
+    .nav-links a {
+        font-size: .8rem;
+    text-decoration: none;
+    color: #fff; /* Or your desired link color */
+    }
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+        height: auto;
+        position: relative;
+        top:2rem;
+        right:2.5rem
+    }
+}
 
 .btn {
     background-color: #ffcc00;
@@ -443,7 +480,7 @@ h1.results {
 }
 
 .gallery-item img {
-    width: 100%;
+    width: 200%;
     height: auto;
     transition: transform 0.3s ease;
 }
